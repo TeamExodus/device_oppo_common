@@ -25,6 +25,8 @@ import android.preference.SwitchPreference;
 import android.text.TextUtils;
 import android.view.MenuItem;
 
+import java.io.File;
+
 import com.android.internal.util.cm.ScreenType;
 
 public class NodePreferenceActivity extends PreferenceActivity
@@ -71,15 +73,23 @@ public class NodePreferenceActivity extends PreferenceActivity
             if (b == null) continue;
             b.setOnPreferenceChangeListener(this);
             String node = Constants.sBooleanNodePreferenceMap.get(pref);
-            String curNodeValue = FileUtils.readOneLine(node);
-            b.setChecked(curNodeValue.equals("1"));
+            if (new File(node).exists()) {
+                String curNodeValue = FileUtils.readOneLine(node);
+                b.setChecked(curNodeValue.equals("1"));
+            } else {
+                b.setEnabled(false);
+            }
         }
         for (String pref : Constants.sStringNodePreferenceMap.keySet()) {
             ListPreference l = (ListPreference) findPreference(pref);
             if (l == null) continue;
             l.setOnPreferenceChangeListener(this);
             String node = Constants.sStringNodePreferenceMap.get(pref);
-            l.setValue(FileUtils.readOneLine(node));
+            if (new File(node).exists()) {
+                l.setValue(FileUtils.readOneLine(node));
+            } else {
+                l.setEnabled(false);
+            }
         }
     }
 
