@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2014 The CyanogenMod Project
+# Copyright (C) 2016 Team Exodus
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -27,3 +27,24 @@ TARGET_POWERHAL_VARIANT := qcom
 # Releasetools
 TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_oppo
 TARGET_RELEASETOOLS_EXTENSIONS := device/oppo/common
+
+
+# Exodus Recovery
+
+
+# Is a QCOM Board Support Package used?
+TW_TARGET_USES_QCOM_BSP := true
+
+# Crypto, use Lollipop not the JB one
+TW_INCLUDE_CRYPTO := true
+TW_INCLUDE_JB_CRYPTO := false
+TW_INCLUDE_L_CRYPTO := true
+
+# Optimize look
+TW_THEME := portrait_hdpi
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
+TARGET_RECOVERY_PIXEL_FORMAT := "RGB_565"
+
+# Make a non secure erase (by default) for faster wipe and less chance to damage the device (TODO: revert when project_569X is merged)
+BOARD_SUPPRESS_SECURE_ERASE := true
+
