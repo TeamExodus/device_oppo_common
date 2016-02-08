@@ -32,9 +32,6 @@ TARGET_RELEASETOOLS_EXTENSIONS := device/oppo/common
 # Exodus Recovery
 
 
-# Is a QCOM Board Support Package used?
-TW_TARGET_USES_QCOM_BSP := true
-
 # Crypto, use Lollipop not the JB one
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_JB_CRYPTO := false
@@ -45,6 +42,6 @@ TW_THEME := portrait_hdpi
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGB_565"
 
-# Make a non secure erase (by default) for faster wipe and less chance to damage the device (TODO: revert when project_569X is merged)
+# Make a non secure erase (by default) for faster wipe and less chance to damage the device
 BOARD_SUPPRESS_SECURE_ERASE := true
-
+COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
