@@ -16,10 +16,10 @@
 
 package com.cyanogenmod.settings.device;
 
-import android.app.ActivityManagerNative;
+
 import android.app.KeyguardManager;
+import android.Manifest;
 import android.content.ActivityNotFoundException;
-import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
@@ -27,25 +27,22 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
-import android.hardware.camera2.CameraManager;
-import android.hardware.camera2.CameraCharacteristics;
 import android.hardware.camera2.CameraAccessException;
+import android.hardware.camera2.CameraCharacteristics;
+import android.hardware.camera2.CameraManager;
 import android.media.session.MediaSessionLegacyHelper;
-import android.net.Uri;
 import android.os.Handler;
 import android.os.Message;
 import android.os.PowerManager;
 import android.os.PowerManager.WakeLock;
-import android.os.RemoteException;
-import android.os.ServiceManager;
 import android.os.SystemClock;
 import android.os.UserHandle;
 import android.os.Vibrator;
-import android.provider.MediaStore;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.KeyEvent;
-import android.view.WindowManagerGlobal;
+
+import android.provider.MediaStore;
 
 import com.android.internal.os.DeviceKeyHandler;
 import com.android.internal.util.ArrayUtils;
@@ -172,6 +169,7 @@ public class KeyHandler implements DeviceKeyHandler {
             switch (msg.arg1) {
             case FLIP_CAMERA_SCANCODE:
             case GESTURE_CIRCLE_SCANCODE:
+
                 ensureKeyguardManager();
                 final String action;
                 mGestureWakeLock.acquire(GESTURE_WAKELOCK_DURATION);
@@ -186,6 +184,11 @@ public class KeyHandler implements DeviceKeyHandler {
                 Intent intent = new Intent(action, null);
                 startActivitySafely(intent);
                 doHapticFeedback();
+
+                /*
+                Intent intent = new Intent(Intent.);
+                mContext.sendBroadcast(intent, Manifest.permission.STATUS_BAR_SERVICE);
+                */
                 break;
             case GESTURE_SWIPE_DOWN_SCANCODE:
                 dispatchMediaKeyWithWakeLockToMediaSession(KeyEvent.KEYCODE_MEDIA_PLAY_PAUSE);
@@ -303,7 +306,6 @@ public class KeyHandler implements DeviceKeyHandler {
             // Ignore
         }
     }
-
     private void doHapticFeedback() {
         if (mVibrator == null) {
             return;
