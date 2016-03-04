@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 The CyanogenMod Project
+ * Copyright (C) 2015-2016 The CyanogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -60,7 +60,6 @@ public class TouchscreenGestureSettings extends NodePreferenceActivity {
             getListView().setPadding(0, 0, 0, 0);
         }
 
-        mHapticFeedback.setChecked(
-                Settings.System.getInt(getContentResolver(), KEY_HAPTIC_FEEDBACK, 1) != 0);
+        mHapticFeedback.setChecked(Settings.System.getInt(getContentResolver(), KEY_HAPTIC_FEEDBACK, 1) != 0);
     }
 }
