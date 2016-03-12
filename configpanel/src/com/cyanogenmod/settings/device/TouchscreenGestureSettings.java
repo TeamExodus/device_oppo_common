@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015-2016 The CyanogenMod Project
+ * Copyright (C) 2015 The CyanogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,6 +19,11 @@ package com.cyanogenmod.settings.device;
 import com.android.internal.util.cm.ScreenType;
 
 import com.cyanogenmod.settings.device.utils.NodePreferenceActivity;
+
+import android.os.Bundle;
+import android.provider.Settings;
+import android.preference.Preference;
+import android.preference.SwitchPreference;
 
 import android.os.Bundle;
 import android.provider.Settings;
