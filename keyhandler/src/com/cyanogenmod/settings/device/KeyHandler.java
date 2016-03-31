@@ -19,8 +19,8 @@ package com.cyanogenmod.settings.device;
 
 import android.app.KeyguardManager;
 import android.Manifest;
-import android.content.ActivityNotFoundException;
 import android.app.NotificationManager;
+import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
