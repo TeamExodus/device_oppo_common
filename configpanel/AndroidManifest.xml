@@ -23,6 +23,8 @@
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
     <uses-permission android:name="android.permission.BLUETOOTH"/>
     <uses-permission android:name="android.permission.INJECT_EVENTS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
 
     <uses-sdk
@@ -72,7 +74,7 @@
                 android:resource="@string/backpad_panel_title"/>
         </activity>
 
-        <activity
+        <!--activity
             android:name=".SliderSettings"
             android:label="@string/notification_slider_panel_title"
             android:icon="@drawable/ic_settings_notification_slider">
@@ -82,7 +84,7 @@
             <meta-data
                 android:name="com.android.settings.category"
                 android:value="com.android.settings.category.device" />
-        </activity>
+        </activity-->
 
         <activity
             android:name=".ButtonSettings"
