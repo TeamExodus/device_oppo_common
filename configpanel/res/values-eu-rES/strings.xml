@@ -29,10 +29,10 @@
   <string name="touchscreen_music_gesture_title">Musika</string>
   <string name="touchscreen_flashlight_gesture_title">Linterna</string>
   <string name="touchscreen_flashlight_gesture_summary">Marraztu \"V\" bat linterna txandakatzeko</string>
-  <string name="touchscreen_music_gesture_summary">Musika erreprodukzioa maneiatzeko keinuak erabili:\n
-    \u2022 Bi atzamar bertikalki irristatu erreproduzitzeko/pausan jartzeko\n
-    \u2022 Gezi bat ezkerrerantz marraztu atzera joateko\n
-    \u2022 Gezi bat eskumarantz marraztu aurrera joateko</string>
+  <string name="touchscreen_music_gesture_summary">Erabili keinuak musika erreprodukzioa kontrolatzeko:\n
+    \u2022 Bi atzamar bertikalki erreproduzitzeko/pausan jartzeko\n
+    \u2022 Gezi bat ezkerrerantz (\'&lt;\') aurreko pistarako\n
+    \u2022 Gezi bat eskumarantz (\'&gt;\') hurrengo pistarako</string>
   <!-- O-Click settings -->
   <string name="oclick_connect_string">Konektatu</string>
   <string name="oclick_disconnect_string">Deskonektatu</string>
@@ -55,4 +55,18 @@
   <string name="oclick_notification_title_connected">O-Click konektatuta</string>
   <string name="oclick_notification_title_disconnected">O-Click deskonektatuta</string>
   <string name="oclick_notification_content_disconnected">Sakatu O-Click botoia berriro konektatzeko</string>
+  <!-- Button settings -->
+  <string name="button_panel_title">Botoi gehigarriak</string>
+  <string name="button_swap_title">Trukatu botoiak</string>
+  <string name="button_swap_summary">Trukatu oraintsukoak eta atzera botoen ordena</string>
+  <!-- Notification slider -->
+  <string name="notification_slider_category_title">Jakinarazpenen tiradera</string>
+  <string name="notification_slider_selection_dialog_title">Ekintza</string>
+  <string name="notification_slider_top_position">Goian</string>
+  <string name="notification_slider_middle_position">Erdian</string>
+  <string name="notification_slider_bottom_position">Behean</string>
+  <string name="notification_slider_mode_total_silence">Isiltasun osoa</string>
+  <string name="notification_slider_mode_alarms_only">Alarmak besterik ez</string>
+  <string name="notification_slider_mode_priority_only">Lehentasunezkoak besterik ez</string>
+  <string name="notification_slider_mode_none">Bat ere ez</string>
 </resources>

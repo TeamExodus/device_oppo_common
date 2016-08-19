@@ -20,7 +20,6 @@ package com.cyanogenmod.settings.device;
 import android.app.KeyguardManager;
 import android.Manifest;
 import android.app.NotificationManager;
-import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
@@ -94,7 +93,6 @@ public class KeyHandler implements DeviceKeyHandler {
 
     private final Context mContext;
     private final PowerManager mPowerManager;
-    private KeyguardManager mKeyguardManager;
     private final NotificationManager mNotificationManager;
     private EventHandler mEventHandler;
     private SensorManager mSensorManager;
@@ -238,11 +236,20 @@ public class KeyHandler implements DeviceKeyHandler {
         }
     }
 
+    private boolean hasSetupCompleted() {
+        return CMSettings.Secure.getInt(mContext.getContentResolver(),
+            CMSettings.Secure.CM_SETUP_WIZARD_COMPLETED, 0) != 0;
+    }
+
     public boolean handleKeyEvent(KeyEvent event) {
         int scanCode = event.getScanCode();
         boolean isKeySupported = ArrayUtils.contains(sSupportedGestures, scanCode);
         boolean isSliderModeSupported = sSupportedSliderModes.indexOfKey(scanCode) >= 0;
         if (!isKeySupported && !isSliderModeSupported) {
+            return false;
+        }
+
+        if (!hasSetupCompleted()) {
             return false;
         }
 

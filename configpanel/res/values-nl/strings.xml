@@ -25,14 +25,10 @@
   <string name="touchpad_double_tap_summary">In camera dubbeltikken om een foto te nemen</string>
   <!-- Gesture shortcuts -->
   <string name="touchscreen_camera_gesture_title">Camera</string>
-  <string name="touchscreen_camera_gesture_summary">Cirkel tekenen om camera te openen</string>
+  <string name="touchscreen_camera_gesture_summary">Teken een cirkel om camera te openen</string>
   <string name="touchscreen_music_gesture_title">Muziek</string>
   <string name="touchscreen_flashlight_gesture_title">Zaklamp</string>
-  <string name="touchscreen_flashlight_gesture_summary">Een \'V\' tekenen voor zaklamp</string>
-  <string name="touchscreen_music_gesture_summary">Gebaren gebruiken om muziek te bedienen \n
-    • Twee vingers verticaal voor afspelen/pauzeren\n
-    • Pijl links tekenen voor vorig nummer\n
-    • Pijl rechts tekenen voor volgend nummer</string>
+  <string name="touchscreen_flashlight_gesture_summary">Teken een \"V\" om zaklamp aan/uit te zetten</string>
   <!-- O-Click settings -->
   <string name="oclick_connect_string">Verbinding maken</string>
   <string name="oclick_disconnect_string">Verbinding verbreken</string>
@@ -55,4 +51,18 @@
   <string name="oclick_notification_title_connected">O-Click verbonden</string>
   <string name="oclick_notification_title_disconnected">O-Click niet verbonden</string>
   <string name="oclick_notification_content_disconnected">Klik op de O-Click-knop om opnieuw verbinding te maken</string>
+  <!-- Button settings -->
+  <string name="button_panel_title">Extra knoppen</string>
+  <string name="button_swap_title">Knoppen verwisselen</string>
+  <string name="button_swap_summary">Recente apps- en Terugknop omwisselen</string>
+  <!-- Notification slider -->
+  <string name="notification_slider_category_title">Meldingschakelaar</string>
+  <string name="notification_slider_selection_dialog_title">Actie</string>
+  <string name="notification_slider_top_position">Bovenste positie</string>
+  <string name="notification_slider_middle_position">Middelste positie</string>
+  <string name="notification_slider_bottom_position">Onderste positie</string>
+  <string name="notification_slider_mode_total_silence">Totale stilte</string>
+  <string name="notification_slider_mode_alarms_only">Alleen alarmen</string>
+  <string name="notification_slider_mode_priority_only">Alleen prioriteit</string>
+  <string name="notification_slider_mode_none">Geen</string>
 </resources>
