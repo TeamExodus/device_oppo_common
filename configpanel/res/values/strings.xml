@@ -74,6 +74,13 @@
     <string name="button_swap_title">Swap buttons</string>
     <string name="button_swap_summary">Swap the order of recents and back buttons</string>
 
+    <!-- haptic feedback  -->
+    <string name="touchscreen_extras">Extras</string>
+    <string name="haptic_feedback">Haptic feedback</string>
+    <string name="haptic_feedback_summary">Vibrate when a gesture got detected</string>
+
+    <!-- Notification slider -->
+    <string name="notification_slider_panel_title">Notification slider</string>
     <!-- Notification slider -->
     <string name="notification_slider_category_title">Notification slider</string>
     <string name="notification_slider_selection_dialog_title">Action</string>
