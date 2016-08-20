@@ -16,7 +16,7 @@
 
 package com.cyanogenmod.settings.device;
 
-
+import android.content.ActivityNotFoundException;
 import android.app.KeyguardManager;
 import android.Manifest;
 import android.app.NotificationManager;
@@ -93,6 +93,7 @@ public class KeyHandler implements DeviceKeyHandler {
 
     private final Context mContext;
     private final PowerManager mPowerManager;
+    private KeyguardManager mKeyguardManager;
     private final NotificationManager mNotificationManager;
     private EventHandler mEventHandler;
     private SensorManager mSensorManager;
@@ -237,8 +238,8 @@ public class KeyHandler implements DeviceKeyHandler {
     }
 
     private boolean hasSetupCompleted() {
-        return CMSettings.Secure.getInt(mContext.getContentResolver(),
-            CMSettings.Secure.CM_SETUP_WIZARD_COMPLETED, 0) != 0;
+        return Settings.System.getInt(mContext.getContentResolver(),
+            Settings.System.SETUP_WIZARD_HAS_RUN, 0) != 0;
     }
 
     public boolean handleKeyEvent(KeyEvent event) {
