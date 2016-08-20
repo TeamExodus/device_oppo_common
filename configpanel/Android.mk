@@ -21,4 +21,7 @@ LOCAL_SRC_FILES := $(call all-java-files-under, src)
 LOCAL_CERTIFICATE := platform
 LOCAL_PACKAGE_NAME := ConfigPanel
 
+LOCAL_STATIC_JAVA_LIBRARIES := \
+org.cyanogenmod.hardware
+
 include $(BUILD_PACKAGE)

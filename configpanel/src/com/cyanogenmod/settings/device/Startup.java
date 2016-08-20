@@ -44,7 +44,7 @@ import java.io.File;
 
 import com.cyanogenmod.settings.device.utils.Constants;
 
-import org.cyanogenmod.internal.util.FileUtils;
+import org.cyanogenmod.hardware.util.FileUtils;
 
 public class Startup extends BroadcastReceiver {
 
