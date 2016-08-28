@@ -29,6 +29,10 @@
   <string name="touchscreen_music_gesture_title">음악</string>
   <string name="touchscreen_flashlight_gesture_title">손전등</string>
   <string name="touchscreen_flashlight_gesture_summary">\'V\'를 그려 손전등 토글</string>
+  <string name="touchscreen_music_gesture_summary">제스처를 사용하여 음악을 제어합니다 \n
+    • 두 손가락을 세로로 움직여 재생/일시정지\n
+    • 왼쪽 화살표를 그려 이전 트랙으로\n
+    • 오른쪽 화살표를 그려 다음 트랙으로</string>
   <!-- O-Click settings -->
   <string name="oclick_connect_string">연결</string>
   <string name="oclick_disconnect_string">연결 해제</string>
@@ -51,18 +55,4 @@
   <string name="oclick_notification_title_connected">O-Click 연결 됨</string>
   <string name="oclick_notification_title_disconnected">O-Click 연결 끊김</string>
   <string name="oclick_notification_content_disconnected">다시 연결하려면 O-Click 버튼을 누르십시오.</string>
-  <!-- Button settings -->
-  <string name="button_panel_title">기타 버튼</string>
-  <string name="button_swap_title">버튼 바꾸기</string>
-  <string name="button_swap_summary">최근 앱과 뒤로 버튼의 위치 바꾸기</string>
-  <!-- Notification slider -->
-  <string name="notification_slider_category_title">알림 슬라이더</string>
-  <string name="notification_slider_selection_dialog_title">작업</string>
-  <string name="notification_slider_top_position">위 위치</string>
-  <string name="notification_slider_middle_position">중간 위치</string>
-  <string name="notification_slider_bottom_position">아래 위치</string>
-  <string name="notification_slider_mode_total_silence">모두 차단</string>
-  <string name="notification_slider_mode_alarms_only">알람만</string>
-  <string name="notification_slider_mode_priority_only">중요 알림만</string>
-  <string name="notification_slider_mode_none">끔</string>
 </resources>

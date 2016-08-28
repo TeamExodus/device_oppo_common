@@ -29,6 +29,10 @@
   <string name="touchscreen_music_gesture_title">Música</string>
   <string name="touchscreen_flashlight_gesture_title">Llinterna</string>
   <string name="touchscreen_flashlight_gesture_summary">Dibuxa una V pa conmutar lla luz de la llinterna</string>
+  <string name="touchscreen_music_gesture_summary">Usa xestos pa remanar la reproducción de música:\n
+    • Esliza 2 deos verticalmente pa reproducir/posar\n
+    • Dibuxa una flecha a la esquierda pa retroceder pista\n
+    • Dibuxa una flecha a la derecha p\'avanzar pista</string>
   <!-- O-Click settings -->
   <string name="oclick_connect_string">Coneutar</string>
   <string name="oclick_disconnect_string">Desconeutar</string>
@@ -51,18 +55,4 @@
   <string name="oclick_notification_title_connected">O-Click coneutáu</string>
   <string name="oclick_notification_title_disconnected">O-Click desconeutáu</string>
   <string name="oclick_notification_content_disconnected">Primi\'l botón O-Click pa volver a coneutar</string>
-  <!-- Button settings -->
-  <string name="button_panel_title">Opciones adicionales</string>
-  <string name="button_swap_title">Cambiar botones</string>
-  <string name="button_swap_summary">Cambiar l\'orde de los botones \"recientes\" y \"atrás\"</string>
-  <!-- Notification slider -->
-  <string name="notification_slider_category_title">Barra eslizante de notificaciones</string>
-  <string name="notification_slider_selection_dialog_title">Aición</string>
-  <string name="notification_slider_top_position">Posición superior</string>
-  <string name="notification_slider_middle_position">Posición central</string>
-  <string name="notification_slider_bottom_position">Posición inferior</string>
-  <string name="notification_slider_mode_total_silence">Silenciu total</string>
-  <string name="notification_slider_mode_alarms_only">Namái alarmes</string>
-  <string name="notification_slider_mode_priority_only">Namái prioridá</string>
-  <string name="notification_slider_mode_none">Nenguna</string>
 </resources>
